@@ -34,16 +34,21 @@ public class Generics
 {
 	public static void main(String[] args) 
 	{
-		ArrayList <Integer> al = new ArrayList();
+		ArrayList <Integer> al = new ArrayList<Integer>();
 		al.add(54);
 		al.add(643);
 		
 		int a = (int) al.get(0);
-//		System.out.println(a);
+		System.out.println(a);
 		
-		MyGeneric<String> g1 = new MyGeneric(23,"Akshit");
-		String s = g1.getT1();
-
-		System.out.println(s);
+		MyGeneric<String> g1 = new MyGeneric<String>(20,"Akshit");
+		
+		System.out.println(g1.getVal());
+		
+		System.out.println( "Name : " + g1.getT1() + "\nAge  : " + g1.getVal() + "\n-----------------------------");
+		
+		
+		
+		
 	}
 }

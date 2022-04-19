@@ -3,11 +3,16 @@ package trimester6;
 //extending the Thread class
 class Multithread extends Thread
 {
+	Multithread(String s)
+	{
+		super(s);
+	}
+	
 	public void run()
 	{
 		try
 		{
-			System.out.println("Thread " + Thread.currentThread().getId() + " is running.");
+			System.out.println("Thread " + Thread.currentThread().getName() + " is running.");
 		}
 		catch(Exception e)
 		{
@@ -23,7 +28,8 @@ public class MultithreadingDemo
 		int n = 5;
 		for(int i=0; i<n; i++)
 		{
-			Multithread ob = new Multithread();
+			Multithread ob = new Multithread("number " + (i+1));
+			//ob.setName("some");
 			ob.start();
 		}
 	}
