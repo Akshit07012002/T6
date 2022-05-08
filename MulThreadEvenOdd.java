@@ -11,7 +11,7 @@ public void printOddnumber()
 	{
 		while(cnt % 2 == 1){
 		
-		System.out.println(cnt + " ");
+		System.out.println("\tOdd  : " + cnt);
 		cnt++;
 		}
 	}							
@@ -23,7 +23,7 @@ public void printEvennumber()
 	{
 		while(cnt % 2 == 0){
 		
-		System.out.println(cnt + " ");
+		System.out.println("\tEven : " + cnt);
 		cnt++;
 		}
 	}
