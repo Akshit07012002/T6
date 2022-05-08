@@ -1,8 +1,3 @@
-/**
- *  Code By : AKSHIT MAHAUR
- *  GITHUB : https://github.com/Akshit07012002
- */
-
 package trimester6;
 
 import java.io.*;
